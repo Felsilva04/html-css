@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--"name" mais util para html e o php
+        "id" para o JavaScript -->
+    
+        <!--GET= metedo padrão do html, que pode ser utilizado para dados não sensiveis, como uma pesquisa no google ou formularios sem relação a dados, como senhas ou dados bancarios. Com uma quantidade maxima de 3.000 bytes (aproximadamente 3 mil letras). Também não deve ser utilizados para arquivos de midia.
+
+        POST= metodo para uma segurança um pouco maior que o "get" pois retira os dados informados da url, porém ainda visivel de algumas formas como o devtools. Para dados mais sensiveis como senhas e dados bancarios o ideal é trabalhar com httpS. Pode ser usado para arquivos de midia e superiores a 3 mil bytes. -->
+    
+        <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
